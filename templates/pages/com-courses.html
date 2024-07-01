@@ -1,0 +1,1338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Institute | Computer Courses</title>
+
+    <!-- link style.css -->
+
+    <link rel="stylesheet" href="{% static '/css/style.css' %}">
+
+    <!-- remix icon CDN -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"/>
+
+    <!-- link font family -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- link bootstarp.css -->
+
+    <link rel="stylesheet" href="{% static '/css/bootstrap.min.css' %}">
+</head>
+
+<body>
+    <section id="header">
+        <div class="logo">
+            <img src="{% static '/assets/logo.png' %}" alt="Brand_logo">
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="{% url 'web:index' %}">Home</a></li>
+                <li><a href="{% url 'web:about' %}">About</a></li>
+                <li class="dropdown-c">Courses <i class="ri-arrow-down-s-line"></i>
+
+                    <div class="dropdown">
+                        <ul>
+                            
+                            <li><a href="{% url 'web:com_course' %}">Diploma & Computer Course</a></li>
+                            <li><a href="{% url 'web:dis_course' %}">Distance Course</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="{% url 'web:contact' %}">Contact</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="table" style="padding: 50px;" class="c-back">
+        <table class="table table-bordered table-striped table-dark">
+              
+                   
+            <col class=xl68 width=30 style='mso-width-source:userset;mso-width-alt:1097;
+            width:23pt'>
+            <col width=362 style='mso-width-source:userset;mso-width-alt:13238;width:272pt'>
+            <col class=xl68 width=62 style='mso-width-source:userset;mso-width-alt:2267;
+            width:47pt'>
+            <col class=xl68 width=186 style='mso-width-source:userset;mso-width-alt:6802;
+            width:140pt'>
+            <col class=xl66 width=49 style='mso-width-source:userset;mso-width-alt:1792;
+            width:37pt'>
+            <col width=64 style='width:48pt'>
+            <tr height=25 style='height:18.75pt' >
+             <td class=xl96 style="text-align:center" colspan=4><font><strong>Summary of Courses</strong></font></td>
+             <td width=64 style='width:48pt'></td>
+            </tr>
+           
+            <tr height=114 style='height:85.5pt'>
+             <td height=114 class=xl70 width=30 style='height:85.5pt;border-top:none;
+             width:23pt'><b>Sl. No</b></td>
+             <td class=xl70 width=362 style='border-top:none;border-left:none;width:272pt'><b>Title
+             of the Course</b></td>
+             <td class=xl70 width=62 style='border-top:none;border-left:none;width:47pt'><b>Period
+             <br>
+               of <br>
+               Course<br>
+               <span style='mso-spacerun:yes'> </span>in Months/<br>
+               Year</b></td>
+             <td class=xl70 width=186 style='border-top:none;border-left:none;width:140pt'><b>Eligibility</b></td>
+             
+             <td></td>
+            </tr>
+            <tr height=100 style='height:75.0pt'>
+             <td height=100 class=xl71 style='height:75.0pt;border-top:none'>1</td>
+             <td class=xl72 width=362 style='border-top:none;border-left:none;width:272pt'><a href="https://LBS Skill Courses Syllabus.pdf#page=10"><font><strong>Certificate
+             Course in CivilCAD </strong></font></a></td>
+             <td class=xl73 style='border-top:none;border-left:none'>3 M</td>
+             <td class=xl72 width=186 style='border-top:none;border-left:none;width:140pt'>ITI/3
+             year Diploma /+2, SSLC (SSLC can be the qualification only for the applicant
+             with practical experience in related area)</td>
+             
+             <td></td>
+            </tr>
+            <tr height=20 style='height:15.0pt'>
+             <td height=20 class=xl73 style='height:15.0pt;border-top:none'>2</td>
+             <td class=xl72 width=362 style='border-top:none;border-left:none;width:272pt'><a href="LBS Skill Courses Syllabus.pdf#page=14"><font><strong>Certificate
+             Course in Plaxis 2D</strong></font></a></td>
+             <td class=xl73 style='border-top:none;border-left:none'>3 M</td>
+             <td class=xl72 width=186 style='border-top:none;border-left:none;width:140pt'>BTech
+             in Civil Engineering</td>
+             
+             <td></td>
+            </tr>
+            <tr height=20 style='height:15.0pt'>
+             <td height=20 class=xl71 style='height:15.0pt;border-top:none'>3</td>
+             <td class=xl72 width=362 style='border-top:none;border-left:none;width:272pt'><a href="LBS Skill Courses Syllabus.pdf#page=16"><font><strong>Certificate
+             Course in Revit Architecture Expert</strong></font></a></td>
+             <td class=xl73 style='border-top:none;border-left:none'>3 M</td>
+             <td class=xl72 width=186 style='border-top:none;border-left:none;width:140pt'>SSLC</td>
+             
+             <td></td>
+            </tr>
+            <tr height=20 style='height:15.0pt'>
+             <td height=20 class=xl71 style='height:15.0pt;border-top:none'>4</td>
+             <td class=xl72 width=362 style='border-top:none;border-left:none;width:272pt'><a href="LBS Skill Courses Syllabus.pdf#page=18"><font><strong>Certificate
+             Course in Stadd Pro</strong></font></a></td>
+             <td class=xl73 style='border-top:none;border-left:none'>3 M</td>
+             <td class=xl72 width=186 style='border-top:none;border-left:none;width:140pt'>BTech
+             in Civil Engineering</td>
+             
+             <td></td>
+            </tr>
+            <tr height=40 style='height:30.0pt'>
+             <td height=40 class=xl73 style='height:30.0pt;border-top:none'>5</td>
+             <td class=xl72 width=362 style='border-top:none;border-left:none;width:272pt'><a href="LBS Skill Courses Syllabus.pdf#page=20"><font><strong>Certificate
+             Course in Total Station</strong></font></a></td>
+             <td class=xl73 style='border-top:none;border-left:none'>1 M</td>
+             <td class=xl72 width=186 style='border-top:none;border-left:none;width:140pt'>Diploma/
+             BTech in Civil Engineering</td>
+             
+             <td></td>
+            </tr>
+            <tr height=20 style='height:15.0pt'>
+             <td height=20 class=xl71 style='height:15.0pt;border-top:none'>6</td>
+             <td class=xl72 width=362 style='border-top:none;border-left:none;width:272pt'><a href="LBS Skill Courses Syllabus.pdf#page=22"><font><strong>Course
+             on Expert in AUTOCAD</strong></font><span style='mso-spacerun:yes'> </span></a></td>
+             <td class=xl73 style='border-top:none;border-left:none'>3 M</td>
+             <td class=xl72 width=186 style='border-top:none;border-left:none;width:140pt'>ITI/3
+             year Diploma /+2</td>
+             
+             <td></td>
+            </tr>
+            <tr height=20 style='height:15.0pt'>
+             <td height=20 class=xl71 style='height:15.0pt;border-top:none'>7</td>
+             <td class=xl72 width=362 style='border-top:none;border-left:none;width:272pt'><a href="LBS Skill Courses Syllabus.pdf#page=26"><font><strong>Diploma
+             Course on Building Animation</strong></font></a></td>
+             <td class=xl73 style='border-top:none;border-left:none'>6 M</td>
+             <td class=xl72 width=186 style='border-top:none;border-left:none;width:140pt'>SSLC</td>
+             
+             <td></td>
+            </tr>
+            <tr height=20 style='height:15.0pt'>
+             <td height=20 class=xl73 style='height:15.0pt;border-top:none'>8</td>
+             <td class=xl72 width=362 style='border-top:none;border-left:none;width:272pt'><a href="LBS Skill Courses Syllabus.pdf#page=28"><font><strong>Diploma
+             Programme in Interior Designing</strong></font></a></td>
+             <td class=xl73 style='border-top:none;border-left:none'>12 M</td>
+             <td class=xl72 width=186 style='border-top:none;border-left:none;width:140pt'>SSLC</td>
+             
+             <td></td>
+            </tr>
+            <tr height=20 style='height:15.0pt'>
+             <td height=20 class=xl71 style='height:15.0pt;border-top:none'>9</td>
+             <td class=xl72 width=362 style='border-top:none;border-left:none;width:272pt'><a href="LBS Skill Courses Syllabus.pdf#page=36"><font><strong>Basic
+             Computer Familiarization</strong></font></a></td>
+             <td class=xl73 style='border-top:none;border-left:none'>1 M</td>
+             <td class=xl72 width=186 style='border-top:none;border-left:none;width:140pt'>5th
+             &amp; above</td>
+             
+             <td></td>
+            </tr>
+            <tr height=20 style='height:15.0pt'>
+             <td height=20 class=xl71 style='height:15.0pt;border-top:none'>10</td>
+             <td class=xl72 width=362 style='border-top:none;border-left:none;width:272pt'><a href="LBS Skill Courses Syllabus.pdf#page=38"><font><strong>Basic
+             SQL Server Management</strong></font><span style='mso-spacerun:yes'> </span></a></td>
+             <td class=xl73 style='border-top:none;border-left:none'>2 M</td>
+             <td class=xl72 width=186 style='border-top:none;border-left:none;width:140pt'>SSLC</td>
+             
+             <td></td>
+            </tr>
+            <tr height=20 style='height:15.0pt'>
+             <td height=20 class=xl73 style='height:15.0pt;border-top:none'>11</td>
+             <td class=xl72 width=362 style='border-top:none;border-left:none;width:272pt'><a href="LBS Skill Courses Syllabus.pdf#page=40"><font><strong>Certificate
+             Course on Data Mining</strong></font></a></td>
+             <td class=xl73 style='border-top:none;border-left:none'>3 M</td>
+             <td class=xl72 width=186 style='border-top:none;border-left:none;width:140pt'>Plus
+             Two/3 year Diploma<span style='mso-spacerun:yes'> </span></td>
+            
+             <td></td>
+            </tr>
+            <tr height=20 style='height:15.0pt'>
+             <td height=20 class=xl71 style='height:15.0pt;border-top:none'>12</td>
+             <td class=xl72 width=362 style='border-top:none;border-left:none;width:272pt'><a href="LBS Skill Courses Syllabus.pdf#page=42"><font><strong>Certificate
+             Course in Ethical Hacking</strong></font></a></td>
+             <td class=xl73 style='border-top:none;border-left:none'>3 M</td>
+             <td class=xl72 width=186 style='border-top:none;border-left:none;width:140pt'>Plus
+             Two/3 year Diploma<span style='mso-spacerun:yes'> </span></td>
+             
+             <td></td>
+            </tr>
+            <tr height=20 style='height:15.0pt'>
+             <td height=20 class=xl71 style='height:15.0pt;border-top:none'>13</td>
+             <td class=xl72 width=362 style='border-top:none;border-left:none;width:272pt'><a href="LBS Skill Courses Syllabus.pdf#page=44"><font><strong>Certificate
+             Course in Internet of Things</strong></font></a></td>
+             <td class=xl73 style='border-top:none;border-left:none'>3 M</td>
+             <td class=xl72 width=186 style='border-top:none;border-left:none;width:140pt'>SSLC</td>
+             
+             <td></td>
+            </tr>
+            <tr height=20 style='height:15.0pt'>
+             <td height=20 class=xl73 style='height:15.0pt;border-top:none'>14</td>
+             <td class=xl72 width=362 style='border-top:none;border-left:none;width:272pt'><a href="LBS Skill Courses Syllabus.pdf#page=46"><font><strong>Certificate
+             Course in Linux Administration</strong></font></a></td>
+             <td class=xl73 style='border-top:none;border-left:none'>3 M</td>
+             <td class=xl72 width=186 style='border-top:none;border-left:none;width:140pt'>ITI/3
+             year Diploma /+2<span style='mso-spacerun:yes'> </span></td>
+            
+             <td></td>
+            </tr>
+            <tr height=20 style='height:15.0pt'>
+             <td height=20 class=xl71 style='height:15.0pt;border-top:none'>15</td>
+             <td class=xl72 width=362 style='border-top:none;border-left:none;width:272pt'><a href="LBS Skill Courses Syllabus.pdf#page=50"><font><strong>Certificate
+             Course in ORACLE Application</strong></font></a></td>
+             <td class=xl73 style='border-top:none;border-left:none'>2 M</td>
+             <td class=xl72 width=186 style='border-top:none;border-left:none;width:140pt'>Plus
+             Two/3 year Diploma<span style='mso-spacerun:yes'> </span></td>
+             
+             <td></td>
+            </tr>
+            <tr height=20 style='height:15.0pt'>
+             <td height=20 class=xl71 style='height:15.0pt;border-top:none'>16</td>
+             <td class=xl72 width=362 style='border-top:none;border-left:none;width:272pt'><a href="LBS Skill Courses Syllabus.pdf#page=54"><font><strong>Certificate
+             Course in PHP &amp; Mysql</strong></font></a></td>
+             <td class=xl73 style='border-top:none;border-left:none'>2 M</td>
+             <td class=xl72 width=186 style='border-top:none;border-left:none;width:140pt'>Plus
+             Two/3 year Diploma<span style='mso-spacerun:yes'> </span></td>
+            
+             <td></td>
+            </tr>
+            <tr height=20 style='height:15.0pt'>
+             <td height=20 class=xl73 style='height:15.0pt;border-top:none'>17</td>
+             <td class=xl72 width=362 style='border-top:none;border-left:none;width:272pt'><a href="LBS Skill Courses Syllabus.pdf#page=56"><font><strong>Certificate
+             Course in Python</strong></font></a></td>
+             <td class=xl73 style='border-top:none;border-left:none'>3 M</td>
+             <td class=xl72 width=186 style='border-top:none;border-left:none;width:140pt'>SSLC</td>
+           
+             <td></td>
+            </tr>
+            <tr height=20 style='height:15.0pt'>
+             <td height=20 class=xl71 style='height:15.0pt;border-top:none'>18</td>
+             <td class=xl72 width=362 style='border-top:none;border-left:none;width:272pt'><a href="LBS Skill Courses Syllabus.pdf#page=58"><font><strong>Certified
+             Computer Operator</strong></font></a></td>
+             <td class=xl73 style='border-top:none;border-left:none'>1 M</td>
+             <td class=xl72 width=186 style='border-top:none;border-left:none;width:140pt'>5th
+             &amp; above</td>
+            
+             <td></td>
+            </tr>
+            <tr height=20 style='height:15.0pt'>
+             <td height=20 class=xl71 style='height:15.0pt;border-top:none'>19</td>
+             <td class=xl72 width=362 style='border-top:none;border-left:none;width:272pt'><a href="LBS Skill Courses Syllabus.pdf#page=60"><font><strong>Certified
+             Professional in Dot Net</strong></font><span style='mso-spacerun:yes'> </span></a></td>
+             <td class=xl73 style='border-top:none;border-left:none'>6 M</td>
+             <td class=xl72 width=186 style='border-top:none;border-left:none;width:140pt'>Plus
+             Two/3 year Diploma<span style='mso-spacerun:yes'> </span></td>
+             
+             <td></td>
+            </tr>
+            <tr height=20 style='height:15.0pt'>
+             <td height=20 class=xl73 style='height:15.0pt;border-top:none'>20</td>
+             <td class=xl72 width=362 style='border-top:none;border-left:none;width:272pt'><a href="LBS Skill Courses Syllabus.pdf#page=62"><font><strong>Course
+             on Digital Video Audio Processing</strong></font></a></td>
+             <td class=xl73 style='border-top:none;border-left:none'>4 M</td>
+             <td class=xl72 width=186 style='border-top:none;border-left:none;width:140pt'>SSLC</td>
+             
+             <td></td>
+            </tr>
+            <tr height=20 style='height:15.0pt'>
+             <td height=20 class=xl71 style='height:15.0pt;border-top:none'>21</td>
+             <td class=xl72 width=362 style='border-top:none;border-left:none;width:272pt'><a href="LBS Skill Courses Syllabus.pdf#page=64"><font><strong>Course
+             on Expert Web Designing</strong></font><span style='mso-spacerun:yes'> </span></a></td>
+             <td class=xl73 style='border-top:none;border-left:none'>3 M</td>
+             <td class=xl72 width=186 style='border-top:none;border-left:none;width:140pt'>SSLC</td>
+             
+             <td></td>
+            </tr>
+            <tr height=40 style='height:30.0pt'>
+             <td height=40 class=xl71 style='height:30.0pt;border-top:none'>22</td>
+             <td class=xl72 width=362 style='border-top:none;border-left:none;width:272pt'><a href="LBS Skill Courses Syllabus.pdf#page=68"><font><strong>Course
+             on Video Editing using Editing Software.(windows based)</strong></font></a></td>
+             <td class=xl73 style='border-top:none;border-left:none'>1 M</td>
+             <td class=xl72 width=186 style='border-top:none;border-left:none;width:140pt'>SSLC</td>
+             
+             <td></td>
+            </tr>
+            <tr height=20 style='height:15.0pt'>
+             <td height=20 class=xl73 style='height:15.0pt;border-top:none'>23</td>
+             <td class=xl72 width=362 style='border-top:none;border-left:none;width:272pt'><a href="LBS Skill Courses Syllabus.pdf#page=70"><font><strong>Course
+             on Video Editing using Final Cut Pro</strong></font></a></td>
+             <td class=xl73 style='border-top:none;border-left:none'>1 M</td>
+             <td class=xl72 width=186 style='border-top:none;border-left:none;width:140pt'>SSLC</td>
+             
+             <td></td>
+            </tr>
+            <tr height=20 style='height:15.0pt'>
+             <td height=20 class=xl71 style='height:15.0pt;border-top:none'>24</td>
+             <td class=xl72 width=362 style='border-top:none;border-left:none;width:272pt'><a href="LBS Skill Courses Syllabus.pdf#page=72"><font><strong>Digital
+             Literacy Certification</strong></font></a></td>
+             <td class=xl73 style='border-top:none;border-left:none'>1 M</td>
+             <td class=xl72 width=186 style='border-top:none;border-left:none;width:140pt'>7th
+             &amp; Above</td>
+             
+             <td></td>
+            </tr>
+            <tr height=20 style='height:15.0pt'>
+             <td height=20 class=xl71 style='height:15.0pt;border-top:none'>25</td>
+             <td class=xl72 width=362 style='border-top:none;border-left:none;width:272pt'><a href="LBS Skill Courses Syllabus.pdf#page=76"><font><strong>Graphic
+             Design using Adobe Corel Draw</strong></font></a></td>
+             <td class=xl73 style='border-top:none;border-left:none'>1 M</td>
+             <td class=xl75 width=186 style='border-top:none;border-left:none;width:140pt'>7th
+             &amp; Above</td>
+            
+             <td></td>
+            </tr>
+            <tr height=20 style='height:15.0pt'>
+             <td height=20 class=xl73 style='height:15.0pt;border-top:none'>26</td>
+             <td class=xl72 width=362 style='border-top:none;border-left:none;width:272pt'><a href="LBS Skill Courses Syllabus.pdf#page=78"><font><strong>Graphic
+             Design using Adobe Photoshop</strong></font></a></td>
+             <td class=xl73 style='border-top:none;border-left:none'>1 M</td>
+             <td class=xl75 width=186 style='border-top:none;border-left:none;width:140pt'>7th
+             &amp; Above</td>
+             
+             <td></td>
+            </tr>
+            <tr height=20 style='height:15.0pt'>
+             <td height=20 class=xl71 style='height:15.0pt;border-top:none'>27</td>
+             <td class=xl72 width=362 style='border-top:none;border-left:none;width:272pt'><a href="LBS Skill Courses Syllabus.pdf#page=82"><font><strong>Junior
+             Animator Course</strong></font><span style='mso-spacerun:yes'> </span></a></td>
+             <td class=xl73 style='border-top:none;border-left:none'>1 M</td>
+             <td class=xl72 width=186 style='border-top:none;border-left:none;width:140pt'>7th
+             &amp; Above</td>
+             
+             <td></td>
+            </tr>
+            <tr height=20 style='height:15.0pt'>
+             <td height=20 class=xl71 style='height:15.0pt;border-top:none'>28</td>
+             <td class=xl72 width=362 style='border-top:none;border-left:none;width:272pt'><a href="LBS Skill Courses Syllabus.pdf#page=84"><font><strong>Junior
+             Programmer Course</strong></font></a></td>
+             <td class=xl73 style='border-top:none;border-left:none'>2 M</td>
+             <td class=xl72 width=186 style='border-top:none;border-left:none;width:140pt'>7th
+             &amp; Above</td>
+             
+             <td></td>
+            </tr>
+            <tr height=140 style='height:105.0pt'>
+             <td height=140 class=xl73 style='height:105.0pt;border-top:none'>29</td>
+             <td class=xl72 width=362 style='border-top:none;border-left:none;width:272pt'><a href="LBS Skill Courses Syllabus.pdf#page=86"><font><strong>Certificate
+             Course in Artificial Intelligence</strong></font></a></td>
+             <td class=xl73 style='border-top:none;border-left:none'>3 M</td>
+             <td class=xl72 width=186 style='border-top:none;border-left:none;width:140pt'>Plus
+             Two/3 year Diploma<br>
+               (Prerequisites courses may be suggested Such as Datastructures ,
+             Algorithm.Or else the duration may be increased to 150hrs)<span
+             style='mso-spacerun:yes'> </span></td>
+             
+             <td></td>
+            </tr>
+            <tr height=20 style='height:15.0pt'>
+             <td height=20 class=xl71 style='height:15.0pt;border-top:none'>30</td>
+             <td class=xl72 width=362 style='border-top:none;border-left:none;width:272pt'><a href="LBS Skill Courses Syllabus.pdf#page=90"><font><strong>Certificate
+             Course in<span style='mso-spacerun:yes'>  </span>Laptop Servicing</strong></font></a></td>
+             <td class=xl73 style='border-top:none;border-left:none'>3 M</td>
+             <td class=xl72 width=186 style='border-top:none;border-left:none;width:140pt'>SSLC</td>
+             
+             <td></td>
+            </tr>
+            <tr height=20 style='height:15.0pt'>
+             <td height=20 class=xl71 style='height:15.0pt;border-top:none'>31</td>
+             <td class=xl72 width=362 style='border-top:none;border-left:none;width:272pt'><a href="LBS Skill Courses Syllabus.pdf#page=92"><font><strong>Certificate
+             Course in in Robotics-Online</strong></font></a></td>
+             <td class=xl73 style='border-top:none;border-left:none'>3 M</td>
+             <td class=xl72 width=186 style='border-top:none;border-left:none;width:140pt'>Plus
+             Two/3 year Diploma<span style='mso-spacerun:yes'> </span></td>
+             
+             <td></td>
+            </tr>
+            <tr height=20 style='height:15.0pt'>
+             <td height=20 class=xl73 style='height:15.0pt;border-top:none'>32</td>
+             <td class=xl72 width=362 style='border-top:none;border-left:none;width:272pt'><a href="LBS Skill Courses Syllabus.pdf#page=94"><font><strong>Course
+             on Digital Video Editing</strong></font></a></td>
+             <td class=xl73 style='border-top:none;border-left:none'>1 M</td>
+             <td class=xl72 width=186 style='border-top:none;border-left:none;width:140pt'>7th
+             &amp; Above</td>
+             
+             <td></td>
+            </tr>
+            <tr height=100 style='height:75.0pt'>
+             <td height=100 class=xl71 style='height:75.0pt;border-top:none'>33</td>
+             <td class=xl72 width=362 style='border-top:none;border-left:none;width:272pt'><a href="LBS Skill Courses Syllabus.pdf#page=96"><font><strong>Certificate
+             Course in Electrical Autocad</strong></font><span style='mso-spacerun:yes'> </span></a></td>
+             <td class=xl73 style='border-top:none;border-left:none'>3 M</td>
+             <td class=xl72 width=186 style='border-top:none;border-left:none;width:140pt'>ITI/3
+             year Diploma /+2, SSLC (SSLC can be the qualification only for the applicant
+             with practical experience in related area)</td>
+             
+             <td></td>
+            </tr>
+            <tr height=20 style='height:15.0pt'>
+             <td height=20 class=xl71 style='height:15.0pt;border-top:none'>34</td>
+             <td class=xl72 width=362 style='border-top:none;border-left:none;width:272pt'><a href="LBS Skill Courses Syllabus.pdf#page=98"><font><strong>Basic
+             Course on Video and Audio Editing</strong></font></a></td>
+             <td class=xl73 style='border-top:none;border-left:none'>1 M</td>
+             <td class=xl72 width=186 style='border-top:none;border-left:none;width:140pt'>7th
+             &amp; Above</td>
+             
+             <td></td>
+            </tr>
+            <tr height=20 style='height:15.0pt'>
+             <td height=20 class=xl73 style='height:15.0pt;border-top:none'>35</td>
+             <td class=xl72 width=362 style='border-top:none;border-left:none;width:272pt'><a href="LBS Skill Courses Syllabus.pdf#page=104"><font><strong>Diploma
+             Course for Primary School Faculty</strong></font></a></td>
+             <td class=xl73 style='border-top:none;border-left:none'>12 M</td>
+             <td class=xl72 width=186 style='border-top:none;border-left:none;width:140pt'>Plus
+             Two</td>
+             
+             <td></td>
+            </tr>
+            <tr height=100 style='height:75.0pt'>
+             <td height=100 class=xl71 style='height:75.0pt;border-top:none'>36</td>
+             <td class=xl72 width=362 style='border-top:none;border-left:none;width:272pt'><a href="LBS Skill Courses Syllabus.pdf#page=108"><font><strong>Advanced
+             Certificate Course in Mechanical AutoCAD</strong></font></a></td>
+             <td class=xl73 style='border-top:none;border-left:none'>3 M</td>
+             <td class=xl75 width=186 style='border-top:none;border-left:none;width:140pt'>ITI/3
+             year Diploma /+2, SSLC (SSLC can be the qualification only for the applicant
+             with practical experience in related area)</td>
+             
+             <td></td>
+            </tr>
+            <tr height=20 style='height:15.0pt'>
+             <td height=20 class=xl71 style='height:15.0pt;border-top:none'>37</td>
+             <td class=xl72 width=362 style='border-top:none;border-left:none;width:272pt'><a href="LBS Skill Courses Syllabus.pdf#page=110"><font><strong>Certificate
+             Course in Expert 3D Printing</strong></font><span style='mso-spacerun:yes'> </span></a></td>
+             <td class=xl73 style='border-top:none;border-left:none'>3 M</td>
+             <td class=xl72 width=186 style='border-top:none;border-left:none;width:140pt'>SSLC</td>
+            
+             <td></td>
+            </tr>
+            <tr height=20 style='height:15.0pt'>
+             <td height=20 class=xl73 style='height:15.0pt;border-top:none'>38</td>
+             <td class=xl72 width=362 style='border-top:none;border-left:none;width:272pt'><a href="LBS Skill Courses Syllabus.pdf#page=112"><font><strong>Diploma
+             Course on Printing Technology</strong></font></a></td>
+             <td class=xl73 style='border-top:none;border-left:none'>6 M</td>
+             <td class=xl72 width=186 style='border-top:none;border-left:none;width:140pt'>SSLC</td>
+             
+             <td></td>
+            </tr>
+            <tr height=20 style='height:15.0pt'>
+             <td height=20 class=xl71 style='height:15.0pt;border-top:none'>39</td>
+             <td class=xl72 width=362 style='border-top:none;border-left:none;width:272pt'><a href="LBS Skill Courses Syllabus.pdf#page=122"><font><strong>Certificate
+             course on Web Design using HTML and CSS</strong></font></a></td>
+             <td class=xl72 width=62 style='border-top:none;border-left:none;width:47pt'>2
+             M</td>
+             <td class=xl72 width=186 style='border-top:none;border-left:none;width:140pt'>For
+             High school students</td>
+             
+             <td></td>
+            </tr>
+            <tr height=60 style='height:45.0pt'>
+             <td height=60 class=xl71 style='height:45.0pt;border-top:none'>40</td>
+             <td class=xl72 width=362 style='border-top:none;border-left:none;width:272pt'><a href="LBS Skill Courses Syllabus.pdf#page=124"><font><strong>Online
+             Course  C Programming</strong></font></a></td>
+             <td class=xl72 width=62 style='border-top:none;border-left:none;width:47pt'>50hrs
+             Online Course</td>
+             <td class=xl72 width=186 style='border-top:none;border-left:none;width:140pt'>Plus
+             Two</td>
+           
+             <td></td>
+            </tr>
+            <tr height=60 style='height:45.0pt'>
+             <td height=60 class=xl73 style='height:45.0pt;border-top:none'>41</td>
+             <td class=xl72 width=362 style='border-top:none;border-left:none;width:272pt'><a href="LBS Skill Courses Syllabus.pdf#page=126"><font><strong>Online
+             Course  Java Programming</strong></font></a></td>
+             <td class=xl72 width=62 style='border-top:none;border-left:none;width:47pt'>50hrs
+             Online Course</td>
+             <td class=xl72 width=186 style='border-top:none;border-left:none;width:140pt'>Plus
+             Two</td>
+             
+             <td></td>
+            </tr>
+            <tr height=60 style='height:45.0pt'>
+             <td height=60 class=xl71 style='height:45.0pt;border-top:none'>42</td>
+             <td class=xl72 width=362 style='border-top:none;border-left:none;width:272pt'><a href="LBS Skill Courses Syllabus.pdf#page=128"><font><strong>Back
+             End Software Development using<br>
+               Python and starter kit to Machine learning</strong></font> </a></td>
+             <td class=xl72 width=62 style='border-top:none;border-left:none;width:47pt'>5
+             days</td>
+             <td class=xl72 width=186 style='border-top:none;border-left:none;width:140pt'>BTech
+             / Diploma / BSc Comuter/Electronics ongoing Students<span
+             style='mso-spacerun:yes'> </span></td>
+             
+             <td></td>
+            </tr>
+            <tr height=60 style='height:45.0pt'>
+             <td height=60 class=xl71 style='height:45.0pt;border-top:none'>43</td>
+             <td class=xl72 width=362 style='border-top:none;border-left:none;width:272pt'><a href="LBS Skill Courses Syllabus.pdf#page=130"><font><strong>Hurdles
+             inWeb Application Development : <br>
+               Made it Simple byASP.NET</strong></font></a></td>
+             <td class=xl72 width=62 style='border-top:none;border-left:none;width:47pt'>5
+             days</td>
+             <td class=xl72 width=186 style='border-top:none;border-left:none;width:140pt'>BTech
+             / Diploma / BSc Comuter/Electronics ongoing Students<span
+             style='mso-spacerun:yes'> </span></td>
+             
+             <td></td>
+            </tr>
+            <tr height=140 style='height:105.0pt'>
+             <td height=140 class=xl73 style='height:105.0pt;border-top:none'>44</td>
+             <td class=xl72 width=362 style='border-top:none;border-left:none;width:272pt'><a href="LBS Skill Courses Syllabus.pdf#page=132"><font><strong>How
+             to do Online Transactions  A training <br>
+               programme for Housewives</strong></font></a></td>
+             <td class=xl72 width=62 style='border-top:none;border-left:none;width:47pt'>2
+             Weeks</td>
+             <td class=xl72 width=186 style='border-top:none;border-left:none;width:140pt'>Housewives
+             with basic computer awareness, having computers at home with internet
+             connection or having smart mobile phones (preferably having Android operating
+             system)
+             
+             <td></td>
+            </tr>
+            <tr height=60 style='height:45.0pt'>
+             <td height=60 class=xl71 style='height:45.0pt;border-top:none'>45</td>
+             <td class=xl72 width=362 style='border-top:none;border-left:none;width:272pt'><a href="LBS Skill Courses Syllabus.pdf#page=134"><font><strong>A
+             Makeover for a web developers using <br>
+               Node.Js and MongoDB</strong></font></a></td>
+             <td class=xl72 width=62 style='border-top:none;border-left:none;width:47pt'>5
+             days</td>
+             <td class=xl72 width=186 style='border-top:none;border-left:none;width:140pt'>BTech
+             / Diploma / BSc Comuter/Electronics ongoing Students<span
+             style='mso-spacerun:yes'> </span></td>
+            
+             <td></td>
+            </tr>
+            <tr class=xl67 height=60 style='height:45.0pt'>
+             <td height=60 class=xl71 style='height:45.0pt;border-top:none'>46</td>
+             <td class=xl76 width=362 style='border-top:none;border-left:none;width:272pt'><a href="LBS Skill Courses Syllabus.pdf#page=136"><font><strong>Workshop
+             on the Building Blocks of a <br>
+               PC and Make it live</strong></font></a></td>
+             <td class=xl76 width=62 style='border-top:none;border-left:none;width:47pt'>5
+             days</td>
+             <td class=xl76 width=186 style='border-top:none;border-left:none;width:140pt'>BTech
+             / Diploma / BSc Comuter/Electronics ongoing Students<span
+             style='mso-spacerun:yes'> </span></td>
+            
+             <td></td>
+            </tr>
+            <tr height=20 style='height:15.0pt'>
+             <td height=20 class=xl73 style='height:15.0pt;border-top:none'>47</td>
+             <td class=xl71 style='border-top:none;border-left:none'><a href="LBS Skill Courses Syllabus.pdf#page=138"><font><strong>Diploma in Hotel
+             Management<span style='mso-spacerun:yes'> </span></strong></font></a></td>
+             <td class=xl73 style='border-top:none;border-left:none'>1 Year</td>
+             <td class=xl73 style='border-top:none;border-left:none'>12</td>
+            
+             <td></td>
+            </tr>
+            <tr height=20 style='height:15.0pt'>
+             <td height=20 class=xl71 style='height:15.0pt;border-top:none'>48</td>
+             <td class=xl71 style='border-top:none;border-left:none'><a href="LBS Skill Courses Syllabus.pdf#page=141"><font><strong>Diploma in Front Office
+             Operations</strong></font></a></td>
+             <td class=xl73 style='border-top:none;border-left:none'>6 M</td>
+             <td class=xl73 style='border-top:none;border-left:none'>12</td>
+             
+             <td></td>
+            </tr>
+            <tr height=20 style='height:15.0pt'>
+             <td height=20 class=xl71 style='height:15.0pt;border-top:none'>49</td>
+             <td class=xl71 style='border-top:none;border-left:none'><a href="LBS Skill Courses Syllabus.pdf#page=143"><font><strong>Diploma in Food and
+             Beverages</strong></font></a></td>
+             <td class=xl73 style='border-top:none;border-left:none'>6 M</td>
+             <td class=xl73 style='border-top:none;border-left:none'>SSLC</td>
+           
+             <td></td>
+            </tr>
+            <tr height=20 style='height:15.0pt'>
+             <td height=20 class=xl73 style='height:15.0pt;border-top:none'>50</td>
+             <td class=xl71 style='border-top:none;border-left:none'><a href="LBS Skill Courses Syllabus.pdf#page=145"><font><strong>Diploma in MultiCusine
+             Cook</strong></font></a></td>
+             <td class=xl73 style='border-top:none;border-left:none'>6 M</td>
+             <td class=xl72 width=186 style='border-top:none;border-left:none;width:140pt'>SSLC</td>
+             
+             <td></td>
+            </tr>
+            <tr height=20 style='height:15.0pt'>
+             <td height=20 class=xl71 style='height:15.0pt;border-top:none'>51</td>
+             <td class=xl71 style='border-top:none;border-left:none'><a href="LBS Skill Courses Syllabus.pdf#page=148"><font><strong>Diploma in Tourism Guide</strong></font></a></td>
+             <td class=xl73 style='border-top:none;border-left:none'>6 M</td>
+             <td class=xl72 width=186 style='border-top:none;border-left:none;width:140pt'>SSLC</td>
+             
+             <td></td>
+            </tr>
+            <tr height=20 style='height:15.0pt'>
+             <td height=20 class=xl71 style='height:15.0pt;border-top:none'>52</td>
+             <td class=xl71 style='border-top:none;border-left:none'><a href="LBS Skill Courses Syllabus.pdf#page=150"><font><strong>Certificate in Food
+             production<span style='mso-spacerun:yes'> </span></strong></font></a></td>
+             <td class=xl73 style='border-top:none;border-left:none'>3 M</td>
+             <td class=xl72 width=186 style='border-top:none;border-left:none;width:140pt'>SSLC</td>
+             
+             <td></td>
+            </tr>
+            <tr height=20 style='height:15.0pt'>
+             <td height=20 class=xl73 style='height:15.0pt;border-top:none'>53</td>
+             <td class=xl71 style='border-top:none;border-left:none'><a href="LBS Skill Courses Syllabus.pdf#page=151"><font><strong>Certificate in House keeping</strong></font></a></td>
+             <td class=xl73 style='border-top:none;border-left:none'>3 M</td>
+             <td class=xl72 width=186 style='border-top:none;border-left:none;width:140pt'>SSLC</td>
+             
+             <td></td>
+            </tr>
+            <tr height=20 style='height:15.0pt'>
+             <td height=20 class=xl71 style='height:15.0pt;border-top:none'>54</td>
+             <td class=xl71 style='border-top:none;border-left:none'><a href="LBS Skill Courses Syllabus.pdf#page=153"><font><strong>Diploma in Hospitality
+             Management</strong></font></a></td>
+             <td class=xl73 style='border-top:none;border-left:none'>6 M</td>
+             <td class=xl73 style='border-top:none;border-left:none'>12</td>
+             
+             <td></td>
+            </tr>
+            <tr height=20 style='height:15.0pt'>
+             <td height=20 class=xl71 style='height:15.0pt;border-top:none'>55</td>
+             <td class=xl71 style='border-top:none;border-left:none'><a href="LBS Skill Courses Syllabus.pdf#page=155"><font><strong>Diploma in Food
+             Technology</strong></font></a></td>
+             <td class=xl73 style='border-top:none;border-left:none'>6 M</td>
+             <td class=xl73 style='border-top:none;border-left:none'>12</td>
+             
+             <td></td>
+            </tr>
+            <tr height=20 style='height:15.0pt'>
+             <td height=20 class=xl73 style='height:15.0pt;border-top:none'>56</td>
+             <td class=xl71 style='border-top:none;border-left:none'><a href="LBS Skill Courses Syllabus.pdf#page=157"><font><strong>Diploma in Interior
+             Designing<span style='mso-spacerun:yes'> </span></strong></font></a></td>
+             <td class=xl77 style='border-top:none;border-left:none'>6 M</td>
+             <td class=xl77 style='border-top:none;border-left:none'>12</td>
+             
+             <td></td>
+            </tr>
+            <tr height=20 style='height:15.0pt'>
+             <td height=20 class=xl71 style='height:15.0pt;border-top:none'>57</td>
+             <td class=xl71 style='border-top:none;border-left:none'><a href="LBS Skill Courses Syllabus.pdf#page=159"><font><strong>Diploma in Exterior
+             Designing<span style='mso-spacerun:yes'> </span></strong></font></a></td>
+             <td class=xl77 style='border-top:none;border-left:none'>6 M</td>
+             <td class=xl77 style='border-top:none;border-left:none'>12</td>
+             
+             <td></td>
+            </tr>
+            <tr height=20 style='height:15.0pt'>
+             <td height=20 class=xl71 style='height:15.0pt;border-top:none'>58</td>
+             <td class=xl71 style='border-top:none;border-left:none'><a href="LBS Skill Courses Syllabus.pdf#page=161"><font><strong>Diploma in Interior
+             and Exterior Designing<span style='mso-spacerun:yes'> </span></strong></font></a></td>
+             <td class=xl77 style='border-top:none;border-left:none'>1 Year</td>
+             <td class=xl77 style='border-top:none;border-left:none'>12</td>
+            
+             <td></td>
+            </tr>
+            <tr height=20 style='height:15.0pt'>
+             <td height=20 class=xl73 style='height:15.0pt;border-top:none'>59</td>
+             <td class=xl71 style='border-top:none;border-left:none'><a href="LBS Skill Courses Syllabus.pdf#page=165"><font><strong>Diploma in Airport
+             Operation &amp;<span style='mso-spacerun:yes'>  </span>Hospitality<br>
+               (DAPH)</strong></font></a></td>
+             <td class=xl71 style='border-top:none;border-left:none'>1 Year</td>
+             <td class=xl71 style='border-top:none;border-left:none'>12</td>
+             
+             <td></td>
+            </tr>
+            <tr height=20 style='height:15.0pt'>
+             <td height=20 class=xl71 style='height:15.0pt;border-top:none'>60</td>
+             <td class=xl71 style='border-top:none;border-left:none'><a href="LBS Skill Courses Syllabus.pdf#page=167"><font><strong>Diploma in Air cargo
+             Practice and Documentation</strong></font></a></td>
+             <td class=xl71 style='border-top:none;border-left:none'>6 M</td>
+             <td class=xl71 style='border-top:none;border-left:none'>12</td>
+             
+             <td></td>
+            </tr>
+            <tr height=20 style='height:15.0pt'>
+             <td height=20 class=xl71 style='height:15.0pt;border-top:none'>61</td>
+             <td class=xl71 style='border-top:none;border-left:none'><a href="LBS Skill Courses Syllabus.pdf#page=169"><font><strong>Diploma in Airport
+             Ground Staff Training<span style='mso-spacerun:yes'> </span></strong></font></a></td>
+             <td class=xl71 style='border-top:none;border-left:none'>6 M</td>
+             <td class=xl71 style='border-top:none;border-left:none'>12</td>
+           
+             <td></td>
+            </tr>
+            <tr class=xl67 height=20 style='height:15.0pt'>
+             <td height=20 class=xl73 style='height:15.0pt;border-top:none'>62</td>
+             <td class=xl78 style='border-top:none;border-left:none'><a href="LBS Skill Courses Syllabus.pdf#page=170"><font><strong>Certificate<span
+             style='mso-spacerun:yes'>  </span>in Avation Safety<span
+             style='mso-spacerun:yes'> </span></strong></font></a></td>
+             <td class=xl78 style='border-top:none;border-left:none'>3 M</td>
+             <td class=xl78 style='border-top:none;border-left:none'>12</td>
+           
+             <td></td>
+            </tr>
+            <tr height=20 style='height:15.0pt'>
+             <td height=20 class=xl71 style='height:15.0pt;border-top:none'>63</td>
+             <td class=xl71 style='border-top:none;border-left:none'><a href="LBS Skill Courses Syllabus.pdf#page=172"><font><strong>Professional in 3D
+             Animation ( PGDA)</strong></font></a></td>
+             <td class=xl73 style='border-top:none;border-left:none'>1 Year</td>
+             <td class=xl73 style='border-top:none;border-left:none'>12</td>
+             
+             <td></td>
+            </tr>
+            <tr height=20 style='height:15.0pt'>
+             <td height=20 class=xl71 style='height:15.0pt;border-top:none'>64</td>
+             <td class=xl71 style='border-top:none;border-left:none'><a href="LBS Skill Courses Syllabus.pdf#page=174"><font><strong>Diploma in Art Direction</strong></font></a></td>
+             <td class=xl73 style='border-top:none;border-left:none'>1 Year</td>
+             <td class=xl73 style='border-top:none;border-left:none'>12</td>
+            
+             <td></td>
+            </tr>
+            <tr height=20 style='height:15.0pt'>
+             <td height=20 class=xl73 style='height:15.0pt;border-top:none'>65</td>
+             <td class=xl71 style='border-top:none;border-left:none'><a href="LBS Skill Courses Syllabus.pdf#page=176"><font><strong>Diploma in Cinematography</strong></font></a></td>
+             <td class=xl73 style='border-top:none;border-left:none'>1 Year</td>
+             <td class=xl73 style='border-top:none;border-left:none'>12</td>
+            
+             <td></td>
+            </tr>
+            <tr height=20 style='height:15.0pt'>
+             <td height=20 class=xl71 style='height:15.0pt;border-top:none'>66</td>
+             <td class=xl71 style='border-top:none;border-left:none'><a href="LBS Skill Courses Syllabus.pdf#page=179"><font><strong>Diploma in Digital
+             Photography</strong></font></a></td>
+             <td class=xl73 style='border-top:none;border-left:none'>6 M</td>
+             <td class=xl73 style='border-top:none;border-left:none'>12</td>
+             
+             <td></td>
+            </tr>
+            <tr height=20 style='height:15.0pt'>
+             <td height=20 class=xl71 style='height:15.0pt;border-top:none'>67</td>
+             <td class=xl71 style='border-top:none;border-left:none'><a href="LBS Skill Courses Syllabus.pdf#page=181"><font><strong>Diploma in Sound
+             Designing<span style='mso-spacerun:yes'> </span></strong></font></a></td>
+             <td class=xl73 style='border-top:none;border-left:none'>6 M</td>
+             <td class=xl73 style='border-top:none;border-left:none'>12</td>
+            
+             <td></td>
+            </tr>
+            <tr height=20 style='height:15.0pt'>
+             <td height=20 class=xl73 style='height:15.0pt;border-top:none'>68</td>
+             <td class=xl71 style='border-top:none;border-left:none'><a href="LBS Skill Courses Syllabus.pdf#page=182"><font><strong>Diploma in Editing</strong></font></a></td>
+             <td class=xl73 style='border-top:none;border-left:none'>6 M</td>
+             <td class=xl73 style='border-top:none;border-left:none'>12</td>
+             
+             <td></td>
+            </tr>
+            <tr height=20 style='height:15.0pt'>
+             <td height=20 class=xl71 style='height:15.0pt;border-top:none'>69</td>
+             <td class=xl71 style='border-top:none;border-left:none'><a href="LBS Skill Courses Syllabus.pdf#page=183"><font><strong>Diploma in VFX</strong></font></a></td>
+             <td class=xl73 style='border-top:none;border-left:none'>6 M</td>
+             <td class=xl73 style='border-top:none;border-left:none'>12</td>
+           
+             <td></td>
+            </tr>
+            <tr height=20 style='height:15.0pt'>
+             <td height=20 class=xl71 style='height:15.0pt;border-top:none'>70</td>
+             <td class=xl71 style='border-top:none;border-left:none'><a href="LBS Skill Courses Syllabus.pdf#page=184"><font><strong>Diploma in Beauty
+             Thearpist Assistant</strong></font></a></td>
+             <td class=xl73 style='border-top:none;border-left:none'>6 M</td>
+             <td class=xl73 style='border-top:none;border-left:none'>8</td>
+           
+             <td></td>
+            </tr>
+            <tr height=20 style='height:15.0pt'>
+             <td height=20 class=xl73 style='height:15.0pt;border-top:none'>71</td>
+             <td class=xl71 style='border-top:none;border-left:none'><a href="LBS Skill Courses Syllabus.pdf#page=186"><font><strong>Diploma in Aromatherapy</strong></font></a></td>
+             <td class=xl73 style='border-top:none;border-left:none'>6 M</td>
+             <td class=xl73 style='border-top:none;border-left:none'>8</td>
+             
+             <td></td>
+            </tr>
+            <tr height=20 style='height:15.0pt'>
+             <td height=20 class=xl71 style='height:15.0pt;border-top:none'>72</td>
+             <td class=xl71 style='border-top:none;border-left:none'><a href="LBS Skill Courses Syllabus.pdf#page=187"><font><strong>Diploma in Hair Stylist</strong></font></a></td>
+             <td class=xl73 style='border-top:none;border-left:none'>6 M</td>
+             <td class=xl73 style='border-top:none;border-left:none'>8</td>
+             
+             <td></td>
+            </tr>
+            <tr height=20 style='height:15.0pt'>
+             <td height=20 class=xl71 style='height:15.0pt;border-top:none'>73</td>
+             <td class=xl71 style='border-top:none;border-left:none'><a href="LBS Skill Courses Syllabus.pdf#page=189"><font><strong>Diploma in SPA Therapist</strong></font></a></td>
+             <td class=xl73 style='border-top:none;border-left:none'>1 Year</td>
+             <td class=xl72 width=186 style='border-top:none;border-left:none;width:140pt'>SSLC</td>
+             
+             <td></td>
+            </tr>
+            <tr height=20 style='height:15.0pt'>
+             <td height=20 class=xl73 style='height:15.0pt;border-top:none'>74</td>
+             <td class=xl71 style='border-top:none;border-left:none'><a href="LBS Skill Courses Syllabus.pdf#page=193"><font><strong>Diploma in Yoga
+             Instructor</strong></font></a></td>
+             <td class=xl73 style='border-top:none;border-left:none'>6 M</td>
+             <td class=xl72 width=186 style='border-top:none;border-left:none;width:140pt'>SSLC</td>
+             
+             <td></td>
+            </tr>
+            <tr height=20 style='height:15.0pt'>
+             <td height=20 class=xl71 style='height:15.0pt;border-top:none'>75</td>
+             <td class=xl71 style='border-top:none;border-left:none'><a href="LBS Skill Courses Syllabus.pdf#page=199"><font><strong>Diploma in Beauty
+             Technician</strong></font></a></td>
+             <td class=xl73 style='border-top:none;border-left:none'>1 Year</td>
+             <td class=xl73 style='border-top:none;border-left:none'>8</td>
+             
+             <td></td>
+            </tr>
+            <tr height=20 style='height:15.0pt'>
+             <td height=20 class=xl71 style='height:15.0pt;border-top:none'>76</td>
+             <td class=xl71 style='border-top:none;border-left:none'><a href="LBS Skill Courses Syllabus.pdf#page=201"><font><strong>Certificate in
+             Sketching and Oil Painting<span style='mso-spacerun:yes'> </span></strong></font></a></td>
+             <td class=xl79 width=62 style='border-top:none;border-left:none;width:47pt'>6
+             M</td>
+             <td class=xl72 width=186 style='border-top:none;border-left:none;width:140pt'>SSLC</td>
+             
+             <td></td>
+            </tr>
+            <tr height=20 style='height:15.0pt'>
+             <td height=20 class=xl71 style='height:15.0pt;border-top:none'>77</td>
+             <td class=xl71 style='border-top:none;border-left:none'><a href="LBS Skill Courses Syllabus.pdf#page=203"><font><strong>Diploma in Fine
+             Arts<span style='mso-spacerun:yes'> </span></strong></font></a></td>
+             <td class=xl79 width=62 style='border-top:none;border-left:none;width:47pt'>1
+             Year</td>
+             <td class=xl72 width=186 style='border-top:none;border-left:none;width:140pt'>SSLC</td>
+             
+             <td></td>
+            </tr>
+            <tr height=20 style='height:15.0pt'>
+             <td height=20 class=xl71 style='height:15.0pt;border-top:none'>78</td>
+             <td class=xl71 style='border-top:none;border-left:none'><a href="LBS Skill Courses Syllabus.pdf#page=204"><font><strong>Certficate in Dance
+             (Western/ Classical)</strong></font></a></td>
+             <td class=xl73 style='border-top:none;border-left:none'>6 M</td>
+             <td class=xl72 width=186 style='border-top:none;border-left:none;width:140pt'>SSLC</td>
+           
+             <td></td>
+            </tr>
+            <tr height=20 style='height:15.0pt'>
+             <td height=20 class=xl73 style='height:15.0pt;border-top:none'>79</td>
+             <td class=xl71 style='border-top:none;border-left:none'><a href="LBS Skill Courses Syllabus.pdf#page=205"><font><strong>Diploma in Theatre
+             Skills</strong></font></a></td>
+             <td class=xl73 style='border-top:none;border-left:none'>1 Year</td>
+             <td class=xl72 width=186 style='border-top:none;border-left:none;width:140pt'>SSLC</td>
+             
+             <td></td>
+            </tr>
+            <tr height=20 style='height:15.0pt'>
+             <td height=20 class=xl71 style='height:15.0pt;border-top:none'>80</td>
+             <td class=xl71 style='border-top:none;border-left:none'><a href="LBS Skill Courses Syllabus.pdf#page=206"><font><strong>Diploma in Public
+             Relations and Media Management</strong></font></a></td>
+             <td class=xl73 style='border-top:none;border-left:none'>1 Year</td>
+             <td class=xl73 style='border-top:none;border-left:none'>12</td>
+             
+             <td></td>
+            </tr>
+            <tr height=20 style='height:15.0pt'>
+             <td height=20 class=xl71 style='height:15.0pt;border-top:none'>81</td>
+             <td class=xl71 style='border-top:none;border-left:none'><a href="LBS Skill Courses Syllabus.pdf#page=208"><font><strong>Diploma in Visual
+             Communication</strong></font></a></td>
+             <td class=xl73 style='border-top:none;border-left:none'>1 Year</td>
+             <td class=xl73 style='border-top:none;border-left:none'>12</td>
+             
+             <td></td>
+            </tr>
+            <tr class=xl67 height=20 style='height:15.0pt'>
+             <td height=20 class=xl73 style='height:15.0pt;border-top:none'>82</td>
+             <td class=xl78 style='border-top:none;border-left:none'><a href="LBS Skill Courses Syllabus.pdf#page=210"><font><strong>Diploma in Digital
+             Marketing</strong></font></a></td>
+             <td class=xl73 style='border-top:none;border-left:none'>1 Year</td>
+             <td class=xl77 style='border-top:none;border-left:none'>12</td>
+             
+             <td></td>
+            </tr>
+            <tr class=xl67 height=260 style='height:195.0pt'>
+             <td height=260 class=xl71 style='height:195.0pt;border-top:none'>83</td>
+             <td class=xl78 style='border-top:none;border-left:none'><a href="LBS Skill Courses Syllabus.pdf#page=212"><font><strong>Diploma in ERP
+             (D-ERP)<span style='mso-spacerun:yes'> </span></strong></font></a></td>
+             <td class=xl77 style='border-top:none;border-left:none'>3 M</td>
+             <td class=xl76 width=186 style='border-top:none;border-left:none;width:140pt'>B.E./B.
+             Tech or a master's degree (M.E./M. Tech) in engineering, computer science,
+             business administration, or commerce (B. Com, M. Com, ICWA, or CA) with a
+             minimum cumulative GPA of 50% or equivalent and 1 to 5 years of experience,
+             or they must have relevant experience in ERP, BPM, or IT consulting.s</td>
+            
+             <td></td>
+            </tr>
+            <tr height=20 style='height:15.0pt'>
+             <td height=20 class=xl71 style='height:15.0pt;border-top:none'>84</td>
+             <td class=xl71 style='border-top:none;border-left:none'><a href="LBS Skill Courses Syllabus.pdf#page=215"><font><strong>PG Diploma in Tourism
+             administration</strong></font></a></td>
+             <td class=xl73 style='border-top:none;border-left:none'>1 Year</td>
+             <td class=xl73 style='border-top:none;border-left:none'>Degree</td>
+            
+            </tr>
+            <tr height=20 style='height:15.0pt'>
+             <td height=20 class=xl71 style='height:15.0pt;border-top:none'>85</td>
+             <td class=xl71 style='border-top:none;border-left:none'><a href="LBS Skill Courses Syllabus.pdf#page=216"><font><strong>Diploma in Interior
+             Architectural Designing<span style='mso-spacerun:yes'> </span></strong></font></a></td>
+             <td class=xl73 style='border-top:none;border-left:none'>1 Year</td>
+             <td class=xl73 style='border-top:none;border-left:none'>12</td>
+            
+             <td></td>
+            </tr>
+            <tr height=20 style='height:15.0pt'>
+             <td height=20 class=xl73 style='height:15.0pt;border-top:none'>86</td>
+             <td class=xl71 style='border-top:none;border-left:none'><a href="LBS Skill Courses Syllabus.pdf#page=218"><font><strong>Diploma in Live Action
+             Director<span style='mso-spacerun:yes'> </span></strong></font></a></td>
+             <td class=xl73 style='border-top:none;border-left:none'>1 Year</td>
+             <td class=xl73 style='border-top:none;border-left:none'>12</td>
+             
+             <td></td>
+            </tr>
+            <tr height=20 style='height:15.0pt'>
+             <td height=20 class=xl71 style='height:15.0pt;border-top:none'>87</td>
+             <td class=xl71 style='border-top:none;border-left:none'><a href="LBS Skill Courses Syllabus.pdf#page=219"><font><strong>Diploma in Automobile
+             Service Technician</strong></font></a></td>
+             <td class=xl73 style='border-top:none;border-left:none'>1 Year</td>
+             <td class=xl72 width=186 style='border-top:none;border-left:none;width:140pt'>SSLC</td>
+             
+             <td></td>
+            </tr>
+            <tr height=20 style='height:15.0pt'>
+             <td height=20 class=xl71 style='height:15.0pt;border-top:none'>88</td>
+             <td class=xl71 style='border-top:none;border-left:none'><a href="LBS Skill Courses Syllabus.pdf#page=220"><font><strong>PGDM in
+             Advertising<span style='mso-spacerun:yes'> </span></strong></font></a></td>
+             <td class=xl73 style='border-top:none;border-left:none'>1 Year</td>
+             <td class=xl73 style='border-top:none;border-left:none'>Degree</td>
+            
+             <td></td>
+            </tr>
+            <tr height=20 style='height:15.0pt'>
+             <td height=20 class=xl73 style='height:15.0pt;border-top:none'>89</td>
+             <td class=xl71 style='border-top:none;border-left:none'><a href="LBS Skill Courses Syllabus.pdf#page=222"><font><strong>Diploma in Logistics
+             Management</strong></font></a></td>
+             <td class=xl73 style='border-top:none;border-left:none'>1 Year</td>
+             <td class=xl73 style='border-top:none;border-left:none'>12</td>
+             
+             <td></td>
+            </tr>
+            <tr height=20 style='height:15.0pt'>
+             <td height=20 class=xl71 style='height:15.0pt;border-top:none'>90</td>
+             <td class=xl71 style='border-top:none;border-left:none'><a href="LBS Skill Courses Syllabus.pdf#page=225"><font><strong>Diploma in Shipping and
+             Port Management</strong></font></a></td>
+             <td class=xl73 style='border-top:none;border-left:none'>6 M</td>
+             <td class=xl73 style='border-top:none;border-left:none'>12</td>
+             
+             <td></td>
+            </tr>
+            <tr height=20 style='height:15.0pt'>
+             <td height=20 class=xl71 style='height:15.0pt;border-top:none'>91</td>
+             <td class=xl71 style='border-top:none;border-left:none'><a href="LBS Skill Courses Syllabus.pdf#page=226"><font><strong>Diploma in Export /Import
+             Operations</strong></font></a></td>
+             <td class=xl73 style='border-top:none;border-left:none'>6 M</td>
+             <td class=xl73 style='border-top:none;border-left:none'>12</td>
+             
+             <td></td>
+            </tr>
+            <tr height=20 style='height:15.0pt'>
+             <td height=20 class=xl71 style='height:15.0pt;border-top:none'>92</td>
+             <td class=xl71 style='border-top:none;border-left:none'><a href="LBS Skill Courses Syllabus.pdf#page=227"><font><strong>Diploma in Freight
+             Management</strong></font></a></td>
+             <td class=xl73 style='border-top:none;border-left:none'>6 M</td>
+             <td class=xl73 style='border-top:none;border-left:none'>12</td>
+             
+             <td></td>
+            </tr>
+            <tr class=xl67 height=20 style='height:15.0pt'>
+             <td height=20 class=xl71 style='height:15.0pt;border-top:none'>93</td>
+             <td class=xl78 style='border-top:none;border-left:none'><a href="LBS Skill Courses Syllabus.pdf#page=229"><font><strong>Diploma in Warehouse
+             management</strong></font></a></td>
+             <td class=xl77 style='border-top:none;border-left:none'>6 M</td>
+             <td class=xl77 style='border-top:none;border-left:none'>12</td>
+             
+             <td></td>
+            </tr>
+            <tr height=40 style='height:30.0pt'>
+             <td height=40 class=xl73 style='height:30.0pt;border-top:none'>94</td>
+             <td class=xl80 width=362 style='border-top:none;border-left:none;width:272pt'><a href="LBS Skill Courses Syllabus.pdf#page=230"><font><strong>Diploma
+             in Graphics, Animation &amp; Visual FX <br>
+               (DGAV)</strong></font></a></td>
+             <td class=xl73 style='border-top:none;border-left:none'>1 Year</td>
+             <td class=xl72 width=186 style='border-top:none;border-left:none;width:140pt'>SSLC</td>
+             
+             <td></td>
+            </tr>
+            <tr height=20 style='height:15.0pt'>
+             <td height=20 class=xl71 style='height:15.0pt;border-top:none'>95</td>
+             <td class=xl71 style='border-top:none;border-left:none'><a href="LBS Skill Courses Syllabus.pdf#page=232"><font><strong>Diploma in
+             Acupuncture Science</strong></font></a></td>
+             <td class=xl73 style='border-top:none;border-left:none'>6 M</td>
+             <td class=xl73 style='border-top:none;border-left:none'>+2 Science / NIOS
+             equivalent</td>
+             
+             <td></td>
+            </tr>
+            <tr height=20 style='height:15.0pt'>
+             <td height=20 class=xl71 style='height:15.0pt;border-top:none'>96</td>
+             <td class=xl76 width=362 style='border-top:none;border-left:none;width:272pt'><a href="LBS Skill Courses Syllabus.pdf#page=236"><font><strong>Certification
+             in SELENIUM</strong></font></a></td>
+             <td class=xl76 width=62 style='border-top:none;border-left:none;width:47pt'>2
+             M</td>
+             <td class=xl72 width=186 style='border-top:none;border-left:none;width:140pt'>SSLC</td>
+             
+             <td></td>
+            </tr>
+            <tr height=20 style='height:15.0pt'>
+             <td height=20 class=xl73 style='height:15.0pt;border-top:none'>97</td>
+             <td class=xl76 width=362 style='border-top:none;border-left:none;width:272pt'><a href="LBS Skill Courses Syllabus.pdf#page=237"><font><strong>Certification
+             On Search Engine Optimization</strong></font></a></td>
+             <td class=xl76 width=62 style='border-top:none;border-left:none;width:47pt'>4
+             weeks</td>
+             <td class=xl72 width=186 style='border-top:none;border-left:none;width:140pt'>SSLC</td>
+             
+             <td></td>
+            </tr>
+            <tr height=100 style='height:75.0pt'>
+             <td height=100 class=xl71 style='height:75.0pt;border-top:none'>98</td>
+             <td class=xl76 width=362 style='border-top:none;border-left:none;width:272pt'><a href="LBS Skill Courses Syllabus.pdf#page=239"><font><strong>Certification
+             in Cloud Computing with Azure</strong></font></a></td>
+             <td class=xl76 width=62 style='border-top:none;border-left:none;width:47pt'>1
+             M</td>
+             <td class=xl76 width=186 style='border-top:none;border-left:none;width:140pt'>BTech
+             / 3-year Diploma / <br>
+               Degrees completed with basic<br>
+               <span style='mso-spacerun:yes'> </span>computer knowledge<br>
+               <span style='mso-spacerun:yes'> </span>/ +2 computer</td>
+             
+             <td></td>
+            </tr>
+            <tr height=60 style='height:45.0pt'>
+             <td height=60 class=xl71 style='height:45.0pt;border-top:none'>99</td>
+             <td class=xl76 width=362 style='border-top:none;border-left:none;width:272pt'><a href="LBS Skill Courses Syllabus.pdf#page=241"><font><strong>Digital
+             Office Essentials with Tally and Malayalam <br>
+               Typing Skills (Windows, MS Office &amp; Tally with Malayalam)</strong></font></a></td>
+             <td class=xl76 width=62 style='border-top:none;border-left:none;width:47pt'>3
+             M</td>
+             <td class=xl76 width=186 style='border-top:none;border-left:none;width:140pt'>SSLC
+             or above</td>
+             
+             <td></td>
+            </tr>
+            <tr height=60 style='height:45.0pt'>
+             <td height=60 class=xl71 style='height:45.0pt;border-top:none'>100</td>
+             <td class=xl76 width=362 style='border-top:none;border-left:none;width:272pt'><a href="LBS Skill Courses Syllabus.pdf#page=244"><font><strong>International
+             English Language Testing System</strong></font></a></td>
+             <td class=xl76 width=62 style='border-top:none;border-left:none;width:47pt'>3
+             M</td>
+             <td class=xl76 width=186 style='border-top:none;border-left:none;width:140pt'>IELTS
+             is an English language <br>
+               test for study, migration or work</td>
+             
+             <td></td>
+            </tr>
+            <tr height=40 style='height:30.0pt'>
+             <td height=40 class=xl73 style='height:30.0pt;border-top:none'>101</td>
+             <td class=xl76 width=362 style='border-top:none;border-left:none;width:272pt'><a href="LBS Skill Courses Syllabus.pdf#page=245"><font><strong>Occupational
+             English Test</strong></font></a></td>
+             <td class=xl76 width=62 style='border-top:none;border-left:none;width:47pt'>3
+             M</td>
+             <td class=xl76 width=186 style='border-top:none;border-left:none;width:140pt'>English
+             language test <br>
+               for healthcare professionals</td>
+             
+             <td></td>
+            </tr>
+            <tr height=40 style='height:30.0pt'>
+             <td height=40 class=xl71 style='height:30.0pt;border-top:none'>102</td>
+             <td class=xl76 width=362 style='border-top:none;border-left:none;width:272pt'><a href="LBS Skill Courses Syllabus.pdf#page=246"><font><strong>German
+             language Course A1 Level</strong></font></a></td>
+             <td class=xl76 width=62 style='border-top:none;border-left:none;width:47pt'>6
+             M</td>
+             <td class=xl76 width=186 style='border-top:none;border-left:none;width:140pt'>Candidates
+             above<br>
+               <span style='mso-spacerun:yes'> </span>15 years can enroll</td>
+             
+             <td></td>
+            </tr>
+            <tr height=40 style='height:30.0pt'>
+             <td height=40 class=xl71 style='height:30.0pt;border-top:none'>103</td>
+             <td class=xl76 width=362 style='border-top:none;border-left:none;width:272pt'><a href="LBS Skill Courses Syllabus.pdf#page=247"><font><strong>German
+             language Course A2 Level</strong></font></a></td>
+             <td class=xl76 width=62 style='border-top:none;border-left:none;width:47pt'>6
+             M</td>
+             <td class=xl76 width=186 style='border-top:none;border-left:none;width:140pt'>Candidates
+             who have <br>
+               cleared the A-1 Level.</td>
+             
+             <td></td>
+            </tr>
+            <tr height=40 style='height:30.0pt'>
+             <td height=40 class=xl73 style='height:30.0pt;border-top:none'>104</td>
+             <td class=xl76 width=362 style='border-top:none;border-left:none;width:272pt'><a href="LBS Skill Courses Syllabus.pdf#page=249"><font><strong>Diploma
+             in Mobile Phone Technology and <br>
+               Troubleshooting</strong></font></a></td>
+             <td class=xl76 width=62 style='border-top:none;border-left:none;width:47pt'>3
+             M</td>
+             <td class=xl76 width=186 style='border-top:none;border-left:none;width:140pt'>SSLC
+             or above</td>
+            
+             <td></td>
+            </tr>
+            <tr height=40 style='height:30.0pt'>
+             <td height=40 class=xl71 style='height:30.0pt;border-top:none'>105</td>
+             <td class=xl76 width=362 style='border-top:none;border-left:none;width:272pt'><a href="LBS Skill Courses Syllabus.pdf#page=252"><font><strong>Diploma
+             in Refrigeration and Air Conditioning <br>
+               Technology</strong></font></a></td>
+             <td class=xl76 width=62 style='border-top:none;border-left:none;width:47pt'>3
+             M</td>
+             <td class=xl76 width=186 style='border-top:none;border-left:none;width:140pt'>SSLC
+             or above</td>
+             
+             <td></td>
+            </tr>
+            <tr height=20 style='height:15.0pt'>
+             <td height=20 class=xl71 style='height:15.0pt;border-top:none'>106</td>
+             <td class=xl76 width=362 style='border-top:none;border-left:none;width:272pt'><a href="LBS Skill Courses Syllabus.pdf#page=254"><font><strong>Diploma
+             in Web Technology</strong></font></a></td>
+             <td class=xl76 width=62 style='border-top:none;border-left:none;width:47pt'>6
+             M</td>
+             <td class=xl76 width=186 style='border-top:none;border-left:none;width:140pt'>+2/3
+             Year Diploma</td>
+             
+             <td></td>
+            </tr>
+            <tr height=40 style='height:30.0pt'>
+             <td height=40 class=xl71 style='height:30.0pt;border-top:none'>107</td>
+             <td class=xl78 style='border-top:none;border-left:none'><a href="LBS Skill Courses Syllabus.pdf#page=258"><font><strong>Computer Hardware
+             &amp; Networking</strong></font></a></td>
+             <td class=xl76 width=62 style='border-top:none;border-left:none;width:47pt'>2
+             M</td>
+             <td class=xl76 width=186 style='border-top:none;border-left:none;width:140pt'>Plus
+             2/3 Year Diploma/ Any Degree</td>
+             
+             <td></td>
+            </tr>
+            <tr height=40 style='height:30.0pt'>
+             <td height=40 class=xl71 style='height:30.0pt;border-top:none'>108</td>
+             <td class=xl71 style='border-top:none;border-left:none'><a href="LBS Skill Courses Syllabus.pdf#page=262"><font><strong>Certificate Course in
+             Machine Learning Using Python</strong></font></a></td>
+             <td class=xl76 width=62 style='border-top:none;border-left:none;width:47pt'>3
+             M</td>
+             <td class=xl76 width=186 style='border-top:none;border-left:none;width:140pt'>Plus
+             2/3 Year Diploma/BE/B.Tech</td>
+             
+             <td></td>
+            </tr>
+            <tr height=40 style='height:30.0pt'>
+             <td height=40 class=xl73 style='height:30.0pt;border-top:none'>109</td>
+             <td class=xl80 width=362 style='border-top:none;border-left:none;width:272pt'><a href="LBS Skill Courses Syllabus.pdf#page=264"><font><strong>Basics
+             Of Arduino Based<br>
+               Embedded System Development</strong></font></a></td>
+             <td class=xl76 width=62 style='border-top:none;border-left:none;width:47pt'>60
+             Hrs</td>
+             <td class=xl76 width=186 style='border-top:none;border-left:none;width:140pt'>+2</td>
+             
+             <td></td>
+            </tr>
+            <tr height=20 style='height:15.0pt'>
+             <td height=20 class=xl71 style='height:15.0pt;border-top:none'>110</td>
+             <td class=xl73 style='border-top:none;border-left:none'><a href="LBS Skill Courses Syllabus.pdf#page=267"><font><strong>Diploma in Logistics
+             and Supply Chain Management</strong></font></a></td>
+             <td class=xl73 style='border-top:none;border-left:none'>1 Year</td>
+             <td class=xl72 width=186 style='border-top:none;border-left:none;width:140pt'>+2</td>
+             
+             <td></td>
+            </tr>
+            <tr height=20 style='height:15.0pt'>
+             <td height=20 class=xl71 style='height:15.0pt;border-top:none'>111</td>
+             <td class=xl71 style='border-top:none;border-left:none'><a href="LBS Skill Courses Syllabus.pdf#page=273"><font><strong>Desk Top
+             Publishing( Arabic &amp; English )</strong></font></a></td>
+             <td class=xl76 width=62 style='border-top:none;border-left:none;width:47pt'>3
+             M</td>
+             <td class=xl72 width=186 style='border-top:none;border-left:none;width:140pt'>SSLC</td>
+           
+             <td></td>
+            </tr>
+            <tr class=xl67 height=40 style='height:30.0pt'>
+             <td height=40 class=xl73 style='height:30.0pt;border-top:none'>112</td>
+             <td class=xl71 style='border-top:none;border-left:none'><a href="LBS Skill Courses Syllabus.pdf#page=277"><font><strong>Diploma in Computer
+             Applications (Software)<span style='mso-spacerun:yes'> </span></strong></font></a></td>
+             <td class=xl76 width=62 style='border-top:none;border-left:none;width:47pt'>6
+             M</td>
+             <td class=xl76 width=186 style='border-top:none;border-left:none;width:140pt'>+2
+             OR Three year Diploma <br>
+               in any branch of engineering</td>
+             
+             <td></td>
+            </tr>
+            <tr class=xl67 height=68 style='height:51.0pt'>
+             <td height=68 class=xl93 style='height:51.0pt;border-top:none'>113</td>
+             <td class=xl93 style='border-top:none;border-left:none'><a href="LBS Skill Courses Syllabus.pdf#page=288"><font><strong>Diploma in
+             Computerized Financial Accounting</strong></font></a></td>
+             <td class=xl94 width=62 style='border-top:none;border-left:none;width:47pt'>6
+             M</td>
+             <td class=xl95 width=186 style='border-top:none;border-left:none;width:140pt'>Plus
+             2 (Commerce)/B.Com ORDCP (Diploma<br>
+               in Commercial Practice)/HDC/JDC/BBA.</td>
+             
+             <td></td>
+            </tr>
+            <tr class=xl67 height=20 style='height:15.0pt'>
+             <td height=20 class=xl71 style='height:15.0pt;border-top:none'>114</td>
+             <td class=xl71 style='border-top:none;border-left:none'><a href="LBS Skill Courses Syllabus.pdf#page=301"><font><strong>Diploma In Computer
+             Applications<span style='mso-spacerun:yes'> </span></strong></font></a></td>
+             <td class=xl76 width=62 style='border-top:none;border-left:none;width:47pt'>1
+             Year</td>
+             <td class=xl76 width=186 style='border-top:none;border-left:none;width:140pt'>10th
+             standard pass or above.</td>
+            
+             <td></td>
+            </tr>
+            <tr class=xl67 height=40 style='height:30.0pt'>
+             <td height=40 class=xl71 style='height:30.0pt;border-top:none'>115</td>
+             <td class=xl80 width=362 style='border-top:none;border-left:none;width:272pt'><a href="LBS Skill Courses Syllabus.pdf#page=323"><font><strong>Integrated
+             Diploma In Computer Hardware <br>
+               <span style='mso-spacerun:yes'> </span>maintenance &amp; networking</strong></font></a></td>
+             <td class=xl76 width=62 style='border-top:none;border-left:none;width:47pt'>1
+             Year</td>
+             <td class=xl76 width=186 style='border-top:none;border-left:none;width:140pt'>SSLC
+             or Equivalent</td>
+            
+             <td></td>
+            </tr>
+            <tr class=xl67 height=20 style='height:15.0pt'>
+             <td height=20 class=xl73 style='height:15.0pt;border-top:none'>116</td>
+             <td class=xl71 style='border-top:none;border-left:none'><a href="LBS Skill Courses Syllabus.pdf#page=343"><font><strong>Post Graduate Diploma
+             In Computer Applications</strong></font></a></td>
+             <td class=xl76 width=62 style='border-top:none;border-left:none;width:47pt'>1
+             Year</td>
+             <td class=xl76 width=186 style='border-top:none;border-left:none;width:140pt'>Degree
+             in any discipline</td>
+             
+             <td></td>
+            </tr>
+            <tr class=xl67 height=40 style='height:30.0pt'>
+             <td height=40 class=xl71 style='height:30.0pt;border-top:none'>117</td>
+             <td class=xl78 style='border-top:none;border-left:none'><a href="LBS Skill Courses Syllabus.pdf#page=381"><font><strong>Post Diploma In
+             Computer Applications</strong></font></a></td>
+             <td class=xl76 width=62 style='border-top:none;border-left:none;width:47pt'>1
+             Year</td>
+             <td class=xl76 width=186 style='border-top:none;border-left:none;width:140pt'>3
+             year Polytechnic <br>
+               Diploma in any discipline</td>
+             
+             <td></td>
+            </tr>
+            <tr height=80 style='height:60.0pt'>
+             <td height=80 class=xl71 style='height:60.0pt;border-top:none'>118</td>
+             <td class=xl71 style='border-top:none;border-left:none'><a href="LBS Skill Courses Syllabus.pdf#page=419"><font><strong>Computerised
+             Financial Accounting &amp; GST using Tally</strong></font></a></td>
+             <td class=xl76 width=62 style='border-top:none;border-left:none;width:47pt'>3
+             M</td>
+             <td class=xl76 width=186 style='border-top:none;border-left:none;width:140pt'>+2
+             (commerce)/B.Com OR <br>
+               DCP (Diploma in Commercial Practice)<br>
+               /HDC/JDC/BBA</td>
+            
+             <td></td>
+            </tr>
+            <tr height=20 style='height:15.0pt'>
+             <td height=20 class=xl73 style='height:15.0pt;border-top:none'>119</td>
+             <td class=xl71 style='border-top:none;border-left:none'><a href="https://LBS Skill Courses Syllabus.pdf#page=429"><font><strong>Data Entry and Office
+             Automation (English)</strong></font></a></td>
+             <td class=xl77 style='border-top:none;border-left:none'>3 M</td>
+             <td class=xl72 width=186 style='border-top:none;border-left:none;width:140pt'>SSLC</td>
+             
+             <td></td>
+            </tr>
+            <tr height=20 style='height:15.0pt'>
+             <td height=20 class=xl71 style='height:15.0pt;border-top:none'>120</td>
+             <td class=xl71 style='border-top:none;border-left:none'><a href="LBS Skill Courses Syllabus.pdf#page=423"><font><strong>Data Entry and Office
+             Automation (English &amp; Malayalam)</strong></font></a></td>
+             <td class=xl77 style='border-top:none;border-left:none'>4 M</td>
+             <td class=xl72 width=186 style='border-top:none;border-left:none;width:140pt'>SSLC</td>
+            
+             <td></td>
+            </tr>
+            <tr height=40 style='height:30.0pt'>
+             <td height=40 class=xl71 style='height:30.0pt;border-top:none'>121</td>
+             <td class=xl80 width=362 style='border-top:none;border-left:none;width:272pt'><a href="LBS Skill Courses Syllabus.pdf#page=423"><font><strong>Data
+             Entry and Office Automation<span style='mso-spacerun:yes'> 
+             </span>(Malayalam)<br>
+               - (For student who have passed DEOA (English) course)</strong></font></a></td>
+             <td class=xl77 style='border-top:none;border-left:none'>1 M</td>
+             <td class=xl72 width=186 style='border-top:none;border-left:none;width:140pt'>SSLC</td>
+             
+             <td></td>
+            </tr>
+            <tr height=20 style='height:15.0pt'>
+             <td height=20 class=xl71 style='height:15.0pt;border-top:none'>122</td>
+             <td class=xl71 style='border-top:none;border-left:none'><a href="LBS Skill Courses Syllabus.pdf#page=436"><font><strong>Desk Top Publishing</strong></font></a></td>
+             <td class=xl77 style='border-top:none;border-left:none'>3 M</td>
+             <td class=xl72 width=186 style='border-top:none;border-left:none;width:140pt'>SSLC</td>
+             
+             <td></td>
+            </tr>
+            <tr height=20 style='height:15.0pt'>
+             <td height=20 class=xl71 style='height:15.0pt;border-top:none'>123</td>
+             <td class=xl71 style='border-top:none;border-left:none'><a href="LBS Skill Courses Syllabus.pdf#page=441"><font><strong>Diploma in Cruise Tourism</strong></font></a></td>
+             <td class=xl73 style='border-top:none;border-left:none'>1 Year</td>
+             <td class=xl73 style='border-top:none;border-left:none'>12</td>
+           
+             <td></td>
+            </tr>
+            <tr height=20 style='height:15.0pt'>
+             <td height=20 class=xl68 style='height:15.0pt'></td>
+             <td class=xl66></td>
+             <td colspan=2 class=xl68 style='mso-ignore:colspan'></td>
+             <td class=xl66></td>
+             <td></td>
+            </tr>
+            <![if supportMisalignedColumns]>
+            <tr height=0 style='display:none'>
+             <td width=30 style='width:23pt'></td>
+             <td width=362 style='width:272pt'></td>
+             <td width=62 style='width:47pt'></td>
+             <td width=186 style='width:140pt'></td>
+             <td width=49 style='width:37pt'></td>
+             <td width=64 style='width:48pt'></td>
+            </tr>
+            <![endif]>
+           </table>
+    </section>
+
+    
+
+    
+    
+    <script src="{% static '/js/bootstrap.min.js' %}"></script>
+    <script src="{% static '/js/script.js' %}"></script>
+</body>
+    
+</html>

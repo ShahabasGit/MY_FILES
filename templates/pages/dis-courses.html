@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Institute | Distance Courses</title>
+
+    <!-- link style.css -->
+
+    <link rel="stylesheet" href="{% static '/css/distance.css' %}">
+
+    <!-- remix icon CDN -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"/>
+
+    <!-- link font family -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    
+</head>
+
+<body>
+    <section id="header">
+        <div class="logo">
+            <img src="{% static '/assets/logo.png' %}" alt="Brand_logo">
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="{% url 'web:index' %}">Home</a></li>
+                <li><a href="{% url 'web:about' %}">About</a></li>
+                <li class="dropdown-c">Courses <i class="ri-arrow-down-s-line"></i>
+
+                    <div class="dropdown">
+                        <ul>
+                            
+                            <li><a href="{% url 'web:com_course' %}">Diploma & Computer Course</a></li>
+                            <li><a href="{% url 'web:dis_course' %}">Distance Course</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="{% url 'web:contact' %}">Contact</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="Distance" class="c-back">
+        <div class="uni calicut">
+
+            <div class="uni-text">
+                <h3>Calicut University</h3>
+
+                <ul>
+                    <li>B.COM</li>
+                    <li>BBA</li>
+                    <li>BA</li>
+                    <li>MA</li>
+                    <li>M.COM</li>
+                    <li>B.COM</li>
+                    <li>BBA</li>
+                    <li>BA</li>
+                    <li>MA</li>
+                    <li>M.COM</li>
+                </ul>
+            </div>
+
+            
+            
+
+            
+        </div>
+
+        
+
+        <div class="uni sreenarayana">
+
+            <div class="uni-text">
+                <h3>Sreenarayana Guru <br>
+                    Open University</h3>
+
+            <ul>
+                <li>B.COM</li>
+                <li>BBA</li>
+                <li>BA</li>
+                <li>BSC MATHS</li>
+                <li>MSC MATHS</li>
+                <li>MA</li>
+                <li>M.COM</li>
+                <li>MSC MATHS</li>
+                <li>MA</li>
+                <li>M.COM</li>
+
+                
+            </ul>
+            </div>
+
+            
+            
+        </div>
+
+        <div class="uni Bharathiar">
+
+            <div class="uni-text">
+                <h3>Bharathiar University <br>(Online \ ODL Programme)</h3>
+
+            <ul>
+                <li>B.COM</li>
+                <li>BBA</li>
+                <li>BSC MATHS</li>
+                <li>MSC MATHS</li>
+                <li>BA</li>
+                <li>MA</li>
+                <li>M.COM</li>
+                <li>MBA</li>
+                <li>MCA</li>
+                
+                <li>Applied Psycthology</li>
+            </ul>
+            </div>
+
+            
+        </div>
+
+        
+    </section>
+
+    <hr>
+
+    <section id="images">
+        <img src="{% static '/assets/calicut.jpg' %}" alt="">
+        <img src="{% static '/assets/baharathiar.jpg' %}" alt="">
+        <img src="{% static '/assets/Sree_narayana.jpg' %}" alt="">
+    </section>
+
+    <footer>
+        <div class="m">
+            <h6>Company <span class="line">___</span></h6>
+            
+
+            <div class="menu">
+                <ul>
+                    <li><a href="">LBS SKILL CENTER</a></li>
+                    <li><a href="">LIFE GROUP OF INSTITUTION</a></li>
+                    <li><a href="">Calicut University</a></li>
+                    <li><a href="">Bharathiar University</a></li>
+                    <li><a href="">Sreenarayana Guru Open University</a></li>
+                    <li><a href=""><img src="{% static '/assets/LBS.png' %}" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="m">
+            <h6>URLS <span class="line">___</span></h6>
+            
+
+            <div class="menu">
+                <ul>
+                    <li><a href="{% url 'web:index' %}">HOME PAGES</a></li>
+                    <li><a href="{% url 'web:about' %}">ABOUT PAGES</a></li>
+                    <li><a href="{% url 'web:com_course' %}">COURSES PAGES</a></li>
+                    <li><a href="">GALLERY PAGES</a></li>
+                    <li><a href="{% url 'web:contact' %}">CONTACT PAGES</a></li>
+                    <li><a href=""><img src="{% static '/assets/logo.png' %}" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="m">
+            <h6>Courses <span class="line">___</span></h6>
+            
+
+            <div class="menu">
+                <ul>
+                    <li><a href="{% url 'web:dis_course' %}">Distance Courses</a></li>
+                    <li><a href="{% url 'web:com_course' %}">Diploma & Computer Courses</a></li>
+                </ul>
+
+                <h6 style="margin-top: 50px;">Most Popular Courses <span class="line">___</span></h6>
+
+                <ul>
+                    <li><a href="">Aritifial Inteligence</a></li>
+                    <li><a href="">Certified Python Course</a></li>
+                    <li><a href="">Certified Interial Design Course</a></li>
+                    <li><a href="">Certified #D Printing Course</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="m">
+            <h6>Contact <span class="line">___</span></h6>
+            
+
+            <div class="menu">
+                <ul>
+                    <li><a href=""><i class="ri-phone-line"></i>9539444557</a></li>
+                    <li><a href=""><i class="ri-mail-line"></i>lifeinstitute@gmail.com</a></li>
+                    <li><a href=""><i class="ri-map-pin-line"></i>Thrithla, Pattambi</a></li>
+                    <li><a href="">Near Canara bank</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    
+
+
+    
+    
+    
+              
+       
+    
+      
+      
+
+    
+    <script src="{% static '/js/script.js' %}"></script>
+</body>
+    
+</html>

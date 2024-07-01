@@ -1,0 +1,6 @@
+{% for news in flashnews %}
+                <span>{{news.news}}</span>
+            {% endfor %}
+            {% for news in flashnews %}
+                <span>{{news.news}}</span>
+            {% endfor %}

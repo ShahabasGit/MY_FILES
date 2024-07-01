@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Institute | Home</title>
+
+    <!-- link CSS -->
+
+    <link rel="stylesheet" href="{% static '/css/style.css' %}">
+
+    <!-- Google Font Link -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- remix icon CDN -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"/>
+
+    
+
+</head>
+<body>
+    <section id="header">
+        <div class="logo">
+            <img src="{% static '/assets/logo.png' %}" alt="Brand_logo">
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="{% url 'web:index' %}">Home</a></li>
+                <li><a href="{% url 'web:about' %}">About</a></li>
+                <li class="dropdown-c">Courses <i class="ri-arrow-down-s-line"></i>
+
+                    <div class="dropdown">
+                        <ul>
+                            <li><a href="{% url 'web:com_course' %}">Diploma & Computer Courses</a></li>
+                            <li><a href="{% url 'web:dis_course' %}">Distance Courses</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="{% url 'web:contact' %}">Contact</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="Home" class="c-back">
+        <div class="left-text">
+            <h1>We Are Leading Life Group <br> Of Institution  Thrithala.</h1>
+            <p>Our Core Aspiration is to provide an Educational Excellencs, in that every student makes a positive difference during the time with us. In expecting Excellencs we ensure that children enjoy institute in a happy, safe and secure atmosphere designed to fulfill their potential.</p>
+
+            <div class="buttons">
+                <a href="#" class="btn">Our Courses</a>
+                <a href="#" class="btn">Contact Us</a>
+            </div>
+        </div>
+        <div class="right-logo">
+            <img src="{% static '/assets/images.jpg' %}" alt="Home-side-logo">
+        </div>
+    </section>
+
+    <section id="onwer">
+        <div class="left-img-onwer">
+            <img src="{% static '/assets/RoyalCollegeChairman.jpg' %}">
+            <span>Director: Ashrafali M</span>
+        </div>
+        <div class="right-details">
+            
+           
+            <span>Director Message: </span>
+
+            <p>
+                I am sure that our student will fint a pathway to a brightfuture to a closen career or any profession they also can get enough knwoladge to face any damand and challenges that an employer may have on them. I wish for their great success and bright future. 
+            </p>
+        </div>
+    </section>
+
+    <section id="card">
+        <h4>Most Popular Courses</h4>
+
+        <div class="main-card">
+            <div class="cards">
+                <img src="{% static '/assets/card1.jpg' %}">
+                <h2>Certificated Course in Artifial inteligence</h2>
+                <span>plus two/3 year Diploma</span>
+                <hr>
+                <small>3 month</small>
+            </div>
+            <div class="cards">
+                <img src="{% static '/assets/card2.jpg' %}">
+                <h2>Certificated Course in Artifial inteligence</h2>
+                <span>plus two/3 year Diploma</span>
+                <hr>
+                <small>3 month</small>
+            </div>
+            <div class="cards">
+                <img src="{% static '/assets/card3.jpg' %}">
+                <h2>Certificated Course in Artifial inteligence</h2>
+                <span>plus two/3 year Diploma</span>
+                <hr>
+                <small>3 month</small>
+            </div>
+            <div class="cards">
+                <img src="{% static '/assets/card4.jpg' %}">
+                <h2>Certificated Course in Artifial inteligence</h2>
+                <span>plus two/3 year Diploma</span>
+                <hr>
+                <small>3 month</small>
+            </div>
+        </div>
+        
+        
+    </section>
+
+    <section id="news_splash">
+        <div class="new">
+            <h4>FLASH NEWS</h4>
+        </div>
+        <div class="group">
+            {% for flash in flashnews %}
+                <span>{{flash.news}}</span>
+            {% endfor %}
+            {% for flash in flashnews %}
+                <span>{{flash.news}}</span>
+            {% endfor %}
+            {% for flash in flashnews %}
+                <span>{{flash.news}}</span>
+            {% endfor %}
+            {% for flash in flashnews %}
+                <span>{{flash.news}}</span>
+            {% endfor %}
+
+            
+        </div>
+    </section>
+
+    <footer>
+        <div class="m">
+            <h6>Company <span class="line">___</span></h6>
+            
+
+            <div class="menu">
+                <ul>
+                    <li><a href="">LBS SKILL CENTER</a></li>
+                    <li><a href="">LIFE GROUP OF INSTITUTION</a></li>
+                    <li><a href="">Calicut University</a></li>
+                    <li><a href="">Bharathiar University</a></li>
+                    <li><a href="">Sreenarayana Guru Open University</a></li>
+                    <li><a href=""><img src="{% static '/assets/LBS.png' %}" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="m">
+            <h6>URLS <span class="line">___</span></h6>
+            
+
+            <div class="menu">
+                <ul>
+                    <li><a href="{% url 'web:index' %}">HOME PAGES</a></li>
+                    <li><a href="{% url 'web:about' %}">ABOUT PAGES</a></li>
+                    <li><a href="{% url 'web:com_course' %}">COURSES PAGES</a></li>
+                    <li><a href="">GALLERY PAGES</a></li>
+                    <li><a href="{% url 'web:contact' %}">CONTACT PAGES</a></li>
+                    <li><a href=""><img src="{% static '/assets/logo.png' %}" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="m">
+            <h6>Courses <span class="line">___</span></h6>
+            
+
+            <div class="menu">
+                <ul>
+                    <li><a href="{% url 'web:dis_course' %}">Distance Courses</a></li>
+                    <li><a href="{% url 'web:com_course' %}">Diploma & Computer Courses</a></li>
+                </ul>
+
+                <h6 style="margin-top: 50px;">Most Popular Courses <span class="line">___</span></h6>
+
+                <ul>
+                    <li><a href="">Aritifial Inteligence</a></li>
+                    <li><a href="">Certified Python Course</a></li>
+                    <li><a href="">Certified Interial Design Course</a></li>
+                    <li><a href="">Certified #D Printing Course</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="m">
+            <h6>Contact <span class="line">___</span></h6>
+            
+
+            <div class="menu">
+                <ul>
+                    <li><a href=""><i class="ri-phone-line"></i>9539444557</a></li>
+                    <li><a href=""><i class="ri-mail-line"></i>lifeinstitute@gmail.com</a></li>
+                    <li><a href=""><i class="ri-map-pin-line"></i>Thrithla, Pattambi</a></li>
+                    <li><a href="">Near Canara bank</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    
+
+    
+
+    <script src="{% static '/js/script.js' %}"></script>
+</body>
+</html>
